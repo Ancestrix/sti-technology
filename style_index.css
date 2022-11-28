@@ -1,0 +1,124 @@
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+.logo{
+    text-align: center;
+}
+
+.menu {
+    padding: 1%;
+    box-shadow: 0px 15px 20px 0px black;
+    border-radius: 15px;
+    background: linear-gradient(rgb(44, 152, 253),white,white);
+}
+
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+    font-weight: bold;
+    font-size: large;
+}
+nav a.logo{
+    width: fit-content;
+    text-align: center;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+nav li a:hover{
+    color: red;
+    text-shadow: 5px 5px 10px  black;
+}
+
+.conteneur{
+    text-align: center;
+    box-shadow: inset 5px 5px 80px 0px black;
+}
+
+contenu p {
+    padding: 15%;
+    text-align: center;
+    font-size: 200%;
+    box-shadow:  0px 5px 80px 0px black;
+}
+footer {
+    padding-top: 5%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    padding-right: 2%;
+    background: linear-gradient(white,rgb(44, 152, 253),rgb(44, 152, 253));
+}
+footer .droite{
+    text-align: right;
+    width: 100%;
+}
+
+footer table{
+    width: 100%;
+}
+
+footer td.coordonnee img{
+    width: 1.5%;
+}
+footer td.coordonnee{
+    width: fit-content;
+}
+
+footer td.logo{
+    width: fit-content;
+}
+footer a.foot{
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 0px 20px 0px black;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-right: 0;
+}
+footer a:hover.foot{
+    box-shadow: inset 0px 0px 15px 0px black;;
+}
+
+footer a.tel{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+}
+
+footer a:hover{
+    color: red;
+}
