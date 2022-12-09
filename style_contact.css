@@ -96,7 +96,8 @@ h1.bg{
     text-align: center;
     font-size: 28px;
     padding: 3%;
-    width: 40%;
+    width: 43%;
+    opacity: 0.8;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
@@ -121,11 +122,18 @@ h1.bg{
   
   .button:hover span {
     padding-right: 25px;
+    opacity: 1;
   }
   
   .button:hover span:after {
     opacity: 1;
     right: 0;
+  }
+
+  .button:active {
+    background-color: #1652a1;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
   }
 
 contenu td.info {
@@ -230,7 +238,29 @@ footer a:hover{
         text-align: justify;
         margin-left: 25%;
     }
-    
+
+    .button {
+        display: inline-block;
+        text-shadow: 5px 5px 6px grey;
+        border-radius: 15px;
+        background-color: rgb(44, 152, 253);
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 3%;
+        width: 55%;
+        opacity: 0.8;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        box-shadow: 5px 5px 6px grey;
+      }
+
+    contenu td.info{
+        width: 0;
+    }
+
     footer td.contact{
         width: 25%;
         font-size: 0.4em;
@@ -257,6 +287,28 @@ footer a:hover{
         margin-left: 20%;
     }
   
+    .button {
+        display: inline-block;
+        text-shadow: 5px 5px 6px grey;
+        border-radius: 15px;
+        background-color: rgb(44, 152, 253);
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 3%;
+        width: 65%;
+        opacity: 0.8;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        box-shadow: 5px 5px 6px grey;
+      }
+
+    contenu td.info{
+        width: 0;
+    }
+
     footer td.contact{
         width: 25%;
         font-size: 0.32em;
@@ -277,6 +329,24 @@ footer a:hover{
             text-align: justify;
             margin-left: 40%;
         }
+
+        .button {
+            display: inline-block;
+            text-shadow: 5px 5px 6px grey;
+            border-radius: 15px;
+            background-color: rgb(44, 152, 253);
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 3%;
+            width: 50%;
+            opacity: 0.8;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            box-shadow: 5px 5px 6px grey;
+          }
       
         footer td.contact{
             width: 25%;
