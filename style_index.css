@@ -20,7 +20,7 @@ nav{
 .menu {
     padding: 1%;
     box-shadow: 0px 15px 20px 0px black;
-    border-radius: 15px;
+    border-radius: 150px;
     background: linear-gradient(rgb(44, 152, 253),white,white);
 }
 
@@ -43,7 +43,6 @@ nav ul::after{
 }
 
 nav a{
-    width: fit-content;
     display: block;
     text-decoration: none;
     color: black;
@@ -166,7 +165,7 @@ footer a:hover{
    
     a.logo{
         text-align: justify;
-        margin-left: calc(500px - 90%);
+        margin-left: 25%;
     }
     
     footer td.contact{
@@ -186,6 +185,10 @@ footer a:hover{
 
   @media screen and (max-width: 350px) {
   
+    td.coordonnee p,td.coordonnee b{
+        font-size: small;
+    }
+
     a.logo{
         text-align: justify;
         margin-left: 20%;

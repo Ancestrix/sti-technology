@@ -20,7 +20,7 @@ nav{
 .menu {
     padding: 1%;
     box-shadow: 0px 15px 20px 0px black;
-    border-radius: 15px;
+    border-radius: 150px;
     background: linear-gradient(rgb(44, 152, 253),white,white);
 }
 
@@ -61,6 +61,12 @@ a.logo{
 nav li a:hover{
     color: red;
     text-shadow: 5px 5px 10px  black;
+}
+
+h1.titre{
+    margin-top: 5%;
+    text-align: center;
+    text-decoration: underline;
 }
 
 .conteneur{
