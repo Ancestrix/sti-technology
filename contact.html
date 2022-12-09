@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style_contact.css">
     <title>STI Technology</title>
+    <script>
+      function validateForm(){ 
+        var name = document.forms["myForm"]["name"];               
+        var email = document.forms["myForm"]["email"];    
+        var message = document.forms["myForm"]["message"];   
+      
+        if (name.value == "")                                  
+        { 
+            document.getElementById('errorname').innerHTML="Veuillez entrez un nom valide";  
+            name.focus(); 
+            return false; 
+        }else{
+            document.getElementById('errorname').innerHTML="";  
+        }
+          
+        if (email.value == "")                                   
+        { 
+            document.getElementById('erroremail').innerHTML="Veuillez entrez une adresse mail valide"; 
+            email.focus(); 
+            return false; 
+        }else{
+            document.getElementById('erroremail').innerHTML="";  
+        }
+      
+        if (email.value.indexOf("@", 0) < 0)                 
+        { 
+            document.getElementById('erroremail').innerHTML="Veuillez entrez une adresse mail valide"; 
+            email.focus(); 
+            return false; 
+        } 
+      
+        if (email.value.indexOf(".", 0) < 0)                 
+        { 
+            document.getElementById('erroremail').innerHTML="Veuillez entrez une adresse mail valide"; 
+            email.focus(); 
+            return false; 
+        } 
+      
+        if (message.value == "")                           
+        {
+            document.getElementById('errormsg').innerHTML="Veuillez entrez un message valide"; 
+            message.focus(); 
+            return false; 
+        }else{
+            document.getElementById('errormsg').innerHTML="";  
+        }
+      
+        return true; 
+      }
+    </script>
 </head>
 <body>
   <a href="index.html" class="logo"><img src="stilogo.png" /></a>
@@ -26,30 +77,69 @@
       <table>
         <tr>
           <td class="formulaire">
-            <form action="mailto:mokadem59200@live.fr?subject=Test&body=Mon test de mail" method="get">
-              Nom <br><input type="text" name="nom"><br>
-              Prénom <br><input type="text" name="prenom"><br>
-              Email <br><input type="email" name="email" id=""><br>
-              Objet <br><input type="text" name="sujet" id=""><br>
-              Message <br><input type="text" name="message" id="msg" width="200"><br>
-              <a href="mailto:mokadem59200@live.fr?subject=Test&body=Mon test de mail"><input type="submit" value="Envoyer" id="send" ></a>
-            </form>
+            <form name="myForm" action="/file.php" onsubmit="return validateForm()" method="post">
+              <table class="form-style">
+                 <tr>
+                    <td>
+                       <label>
+                          Votre nom <span class="required">*</span>
+                       </label>
+                    </td>
+                    <td>
+                       <input type="text" name="name" class="long"/>
+                       <span class="error" id="errorname"></span>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                       <label>
+                          Votre adresse e-mail <span class="required">*</span>
+                       </label>
+                    </td>
+                    <td>
+                       <input type="email" name="email" class="long"/>
+                       <span class="error" id="erroremail"></span>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                       <label>
+                          Message <span class="required">*</span>
+                       </label>
+                    </td>
+                    <td>
+                       <textarea name="message" class="long field-textarea"></textarea>
+                       <span class="error" id="errormsg"></span>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td></td>
+                    <td>
+                       <input type="submit" value="Envoyer">      
+                       <input type="reset" value="Réinitialiser"> 
+                    </td>
+                 </tr>
+              </table>
+           </form>
           </td>
-          <td class="info"><img src="informatique.jpg" /></td>
+          <td class="info"><div></div></td>
         </tr>
       </table>
     </contenu>
+   
     <footer>
       <table class="gauche">
         <tr>
-          <td class="logo">
-            <img src="stilogo.png"/>
-          </td>
           <td class="coordonnee">
             <img src="adresse.png"/><b>106, rue de Mouvaux 59200 TOURCOING </b><br>
             <p><img src="rcs.png"/><b>R.C.S. Roubaix – Tourcoing :</b> 517 866 075 00016 </p> <br>
             <p><img src="phone.png"/><b>Tél. : </b><a href="tel:" class="tel"> 09 20 70 34 43</a></p><br>
             <p><img src="phone.png"/><b>Fax :</b><a href="tel:" class="tel"> 09 56 53 36 47</a></p>
+          </td>
+          <td class="rs">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
           </td>
           <td class="contact"><a href="mailto:mokadem59200@live.fr?subject=Test&body=Mon test de mail" class="foot">Contactez-nous</a></td>
         </tr>
