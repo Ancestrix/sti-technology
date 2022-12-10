@@ -223,12 +223,12 @@ footer a:hover{
   }
   
   .fa-instagram {
-    background: #55ACEE;
+    background: linear-gradient(#af2370,#dd1e87,#fdcb26);
     color: white;
   }
 
   .fa-linkedin {
-    background: #3B5998;
+    background: #275fd8;
     color: white;
   }
 
