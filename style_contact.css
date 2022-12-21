@@ -135,6 +135,7 @@ h1.bg{
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
+  
 
 contenu td.info {
     width: 50%;
@@ -151,6 +152,8 @@ contenu td.info div{
 
 
 footer {
+    width: 100%;
+    margin: 0 auto;
     padding-top: 5%;
     padding-left: 2%;
     padding-bottom: 2%;
